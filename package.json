@@ -1,7 +1,7 @@
 {
   "name": "dsh-exa",
-  "version": "0.1.0",
-  "description": "Exa neural search as a DeepSeek Harness tool: semantic web search, similar-page discovery, content extraction, and Q&A.",
+  "version": "0.2.0",
+  "description": "Exa neural search as a DeepSeek Harness tool: semantic web search, similar-page discovery, content extraction, and Q&A. Native settings page via DSH schemastery.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -13,9 +13,15 @@
       "patch": "./cordis.patch.yml"
     }
   },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-credentials": "^0.1.5-rc.2",
+    "@deepseek-ai/dsh-launch-environment": "^0.1.5-rc.2",
+    "@deepseek-ai/dsh-settings": "^0.1.5-rc.2"
   },
   "license": "MIT"
 }
